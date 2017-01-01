@@ -23,3 +23,14 @@
 * hibernate.format_sql : 하이버네이트가 실행한 쿼리를 보기좋게 정렬
 * hibernate.use_sql_comment : 쿼리 출력할 때, 주석도 함께 출력
 * hibernate.id.new_generator_mappings : JPA 표준에 맞춘 새로운 키 생성 전략 사용
+
+###JPQL
+- 엔티티 객체를 대상으로 쿼리한다.
+- 데이터베이스 테이블을 전혀 알지 못한다.
+- SQL과 달리 대소문자 구분
+
+```
+select m from Member m
+```
+from Member 에서 Member 는 회원 엔티티 객체를 말하는 것
+
