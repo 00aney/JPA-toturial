@@ -6,7 +6,9 @@
 - server mode : 압축푼 곳 bin/h2.sh
 - http://localhost:8082
 
+
 - JPA Annotation Package : javax.persistence
+
 
 ###persistence.xml 에서 설정 정보 관리
 * persistence-unit 에서 데이터베이스 당 하나의 영속성 유닛을 등록
