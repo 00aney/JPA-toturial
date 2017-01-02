@@ -34,3 +34,12 @@ select m from Member m
 ```
 from Member 에서 Member 는 회원 엔티티 객체를 말하는 것
 
+##데이터베이스 스키마 자동생성
+###hibernate.hbm2ddl.auto 속성
+* create : 기존 테이믈 삭제, 새로 생성(drop + create)
+* create-drop : create 속성에 추가로 종료할 때, 생선한 DDL을 제거(+drop)
+* update : 데이터베이스 테이블과 엔티티 매핑정보를 비교해서 변경 사항만 수정
+* validate : 테이블과 엔티티 매핑정보를 비교해서 차이가 있으면 경고를 남기고, 애플리케이션을 실행하지않는다.
+이 설정은 DDL을 수정하지 않는다.
+
+* none : 자동 생성 기능을 사용하지 않으려면, auto 속성 자체를 삭제하거나, 유효하지 않은 갑을 준다.(none 도 유효하지 않은 값)
