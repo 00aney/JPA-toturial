@@ -34,6 +34,7 @@ select m from Member m
 ```
 from Member 에서 Member 는 회원 엔티티 객체를 말하는 것
 
+
 ##데이터베이스 스키마 자동생성
 ###hibernate.hbm2ddl.auto 속성
 * create : 기존 테이믈 삭제, 새로 생성(drop + create)
